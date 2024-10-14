@@ -22,5 +22,5 @@ steps:
   
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: ''$(System.DefaultWorkingDirectory)/build''
+    PathtoPublish: '$(System.DefaultWorkingDirectory)/build'
     ArtifactName: 'react-build'
