@@ -27,10 +27,10 @@ steps:
     
 - task: AzureStaticWebApp@0
   inputs:
-    workingDirectory: '$(System.DefaultWorkingDirectory)' # string. Alias: cwd | rootDirectory. Working directory. Default: $(System.DefaultWorkingDirectory).
-    app_location: '$(System.DefaultWorkingDirectory)'
+    workingDirectory: './' # string. Alias: cwd | rootDirectory. Working directory. Default: $(System.DefaultWorkingDirectory).
+    app_location: './'
     #app_build_command: 'npm run build'
-    output_location: 'build'
+    output_location: './build'
     #routes_location: # string. Routes location. 
     #config_file_location: # string. Config file location. 
     #skip_app_build: # boolean. Skip app build. 
