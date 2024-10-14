@@ -17,8 +17,7 @@ steps:
 
 - script: |
     npm install
-    npm run build
-  displayName: 'npm install and build'
+  displayName: 'Install packages'
   
 - task: PublishBuildArtifacts@1
   inputs:
@@ -39,4 +38,6 @@ steps:
     #verbose: # boolean. Verbose. 
     #build_timeout_in_minutes: # string. Build timeout in minutes. 
     azure_static_web_apps_api_token: 'd3250dd16055189833fe6b92645b2bf0187384c7927e87e43784954bb9db8fdc5-dfffddf9-c757-45b8-95bc-9447fb379b3a00f398552'
-    deployment_environment: 'Production'
+    #deployment_environment: 'Production'
+    
+
