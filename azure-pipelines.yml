@@ -26,20 +26,20 @@ steps:
     ArtifactName: 'react-app'
     publishLocation: 'Container'
     
-- task: AzureStaticWebApp@0
-  inputs:
-    workingDirectory: './' # string. Alias: cwd | rootDirectory. Working directory. Default: $(System.DefaultWorkingDirectory).
-    app_location: './'
-    #app_build_command: 'npm run build'
-    output_location: './build'
-    #routes_location: # string. Routes location. 
-    #config_file_location: # string. Config file location. 
-    #skip_app_build: # boolean. Skip app build. 
-    #skip_api_build: # boolean. Skip api build. 
-    #is_static_export: # boolean. Set static export. 
-    #verbose: # boolean. Verbose. 
-    #build_timeout_in_minutes: # string. Build timeout in minutes. 
-    azure_static_web_apps_api_token: 'd3250dd16055189833fe6b92645b2bf0187384c7927e87e43784954bb9db8fdc5-dfffddf9-c757-45b8-95bc-9447fb379b3a00f398552'
-    #deployment_environment: 'Production'
+# - task: AzureStaticWebApp@0
+#   inputs:
+#     workingDirectory: './' # string. Alias: cwd | rootDirectory. Working directory. Default: $(System.DefaultWorkingDirectory).
+#     app_location: './'
+#     #app_build_command: 'npm run build'
+#     output_location: './build'
+#     #routes_location: # string. Routes location. 
+#     #config_file_location: # string. Config file location. 
+#     #skip_app_build: # boolean. Skip app build. 
+#     #skip_api_build: # boolean. Skip api build. 
+#     #is_static_export: # boolean. Set static export. 
+#     #verbose: # boolean. Verbose. 
+#     #build_timeout_in_minutes: # string. Build timeout in minutes. 
+#     azure_static_web_apps_api_token: 'd3250dd16055189833fe6b92645b2bf0187384c7927e87e43784954bb9db8fdc5-dfffddf9-c757-45b8-95bc-9447fb379b3a00f398552'
+#     #deployment_environment: 'Production'
     
 
