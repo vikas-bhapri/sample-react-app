@@ -23,15 +23,15 @@ steps:
 
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(Build.BinariesDirectory)'
+    rootFolderOrFile: '$(Build.BinariesDirectory)/build'
     includeRootFolder: false
     archiveType: 'zip'
-    archiveFile: '$(System.DefaultWorkingDirectory)/build/*'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/build.zip'
     replaceExistingArchive: true
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(System.DefaultWorkingDirectory)/build'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/build.zip'
     ArtifactName: 'react-app'
     publishLocation: 'Container'
     
