@@ -17,7 +17,14 @@ steps:
 
 - script: |
     npm install
+    npm run build
   displayName: 'Install packages'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(System.DefaultWorkingDirectory)/build'
+    ArtifactName: 'react-app'
+    publishLocation: 'Container'
     
 - task: AzureStaticWebApp@0
   inputs:
